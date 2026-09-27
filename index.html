@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知命轩 · 八字·星座·风水·性情·姻缘 | 让生活更美好</title>
+<meta name="description" content="在线生辰八字排盘、五行性格分析、星座运势、姻缘配对、风水建议、情绪调节与潜力开发——知命而后行，修身以达观。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2316100a' stroke='%23c9a35c' stroke-width='2'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23c9a35c' font-family='serif'%3E易%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#sec-home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="none" stroke="#c9a35c" stroke-width="2"/>
+        <path d="M24 6 A18 18 0 0 1 24 42 A9 9 0 0 1 24 24 A9 9 0 0 0 24 6 Z" fill="#c9a35c"/>
+        <circle cx="24" cy="15" r="3" fill="#16100a"/>
+        <circle cx="24" cy="33" r="3" fill="#c9a35c"/>
+      </svg>
+      <span class="brand-name">知命轩</span>
+      <span class="brand-sub">知命 · 修心 · 启运</span>
+    </a>
+    <nav class="site-nav">
+      <a class="nav-link" href="#sec-home">首页</a>
+      <a class="nav-link" href="#sec-chart">八字排盘</a>
+      <a class="nav-link" href="#sec-zodiac">星座</a>
+      <a class="nav-link" href="#sec-personality">性格</a>
+      <a class="nav-link" href="#sec-love">姻缘</a>
+      <a class="nav-link" href="#sec-fengshui">风水</a>
+      <a class="nav-link" href="#sec-emotion">情绪</a>
+      <a class="nav-link" href="#sec-potential">潜力</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ 首页 ============ -->
+  <section id="sec-home" class="section hero">
+    <div class="hero-inner">
+      <div class="hero-badge">传统命理 × 现代星座 × 心灵成长</div>
+      <h1 class="hero-title">知命而行，<em>让生活更美好</em></h1>
+      <p class="hero-sub">生辰八字 · 五行性格 · 星座运势 · 姻缘配对 · 风水布局 · 情绪调节 · 潜力开发<br>
+      一键排盘，中西合璧，认识自己，成就自己。</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#sec-chart">✦ 开始排盘</a>
+        <a class="btn btn-ghost" href="#sec-love">❤ 测姻缘</a>
+      </div>
+      <div id="almanac" class="card almanac"></div>
+
+      <div class="feature-grid">
+        <a class="feature" href="#sec-chart">
+          <span class="feature-icon">☯</span>
+          <h3>八字排盘</h3>
+          <p>四柱十神、五行旺衰、喜用神、大运流年，一分钟读懂你的先天格局。</p>
+        </a>
+        <a class="feature" href="#sec-personality">
+          <span class="feature-icon">🧬</span>
+          <h3>五行性格</h3>
+          <p>日主五行 × 生肖 × 星座三重解码，看见你的优势与修炼课题。</p>
+        </a>
+        <a class="feature" href="#sec-zodiac">
+          <span class="feature-icon">✨</span>
+          <h3>星座运势</h3>
+          <p>十二星座性格、爱情、事业、幸运物与年度运势全解析。</p>
+        </a>
+        <a class="feature" href="#sec-love">
+          <span class="feature-icon">💞</span>
+          <h3>姻缘配对</h3>
+          <p>八字五行互补 + 生肖六合 + 星座配对，中西合璧的综合匹配度。</p>
+        </a>
+        <a class="feature" href="#sec-fengshui">
+          <span class="feature-icon">🏮</span>
+          <h3>风水开运</h3>
+          <p>喜用神定方位颜色数字，家居布局、水晶植物助运，附流年九宫飞星。</p>
+        </a>
+        <a class="feature" href="#sec-emotion">
+          <span class="feature-icon">🌊</span>
+          <h3>情绪调节</h3>
+          <p>情志相胜、五音疗愈、呼吸引导、穴位安抚，给心灵一个温柔的出口。</p>
+        </a>
+        <a class="feature" href="#sec-potential">
+          <span class="feature-icon">🌱</span>
+          <h3>潜力开发</h3>
+          <p>天赋解码与职业方向，配合流年指引与成长习惯，把潜力变成实力。</p>
+        </a>
+        <a class="feature" href="#sec-chart">
+          <span class="feature-icon">📜</span>
+          <h3>今日黄历</h3>
+          <p>每日干支、建除宜忌、今日心语——日日是好日，步步起清风。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 八字排盘 ============ -->
+  <section id="sec-chart" class="section">
+    <div class="section-head">
+      <h2>八字排盘</h2>
+      <p>输入出生信息，生成完整命盘：四柱、五行、十神、神煞、大运、流年</p>
+    </div>
+    <form id="chart-form" class="card birth-form" autocomplete="off">
+      <div class="form-error"></div>
+      <div class="form-grid">
+        <label>姓名 <input class="f-name" type="text" placeholder="选填，用于称呼"></label>
+        <label>性别
+          <select class="f-gender">
+            <option value="male">男</option>
+            <option value="female">女</option>
+          </select>
+        </label>
+        <label>历法
+          <select class="f-cal">
+            <option value="solar">公历</option>
+            <option value="lunar">农历</option>
+          </select>
+        </label>
+        <label>出生年 <select class="f-year"></select></label>
+        <label>出生月 <select class="f-month"></select></label>
+        <label>出生日 <select class="f-day"></select></label>
+        <label>出生时辰 <select class="f-hour"></select></label>
+      </div>
+      <label class="leap-wrap cal-lunar-hint" style="display:none">
+        <input type="checkbox" class="f-leap"> 该月为闰月 <span class="leap-hint"></span>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-gold">开始排盘</button>
+        <span class="form-note">时辰不确定可选「不确定」，将按午时推定（结果仅供参考）。八字以立春换年、23 点换日。</span>
+      </div>
+    </form>
+    <div id="chart-result"></div>
+  </section>
+
+  <!-- ============ 星座 ============ -->
+  <section id="sec-zodiac" class="section">
+    <div class="section-head">
+      <h2>星座解析</h2>
+      <p>先在上方排盘，这里自动生成你的星座专属报告</p>
+    </div>
+    <div id="zodiac-result" class="empty-tip">尚未排盘。请先在「八字排盘」输入出生信息，星座报告将自动生成。</div>
+  </section>
+
+  <!-- ============ 性格 ============ -->
+  <section id="sec-personality" class="section">
+    <div class="section-head">
+      <h2>性格解码</h2>
+      <p>五行 × 日主 × 生肖 × 星座，四重视角认识真实的自己</p>
+    </div>
+    <div id="personality-result" class="empty-tip">尚未排盘。请先在「八字排盘」输入出生信息。</div>
+  </section>
+
+  <!-- ============ 姻缘 ============ -->
+  <section id="sec-love" class="section">
+    <div class="section-head">
+      <h2>姻缘配对</h2>
+      <p>输入两人的出生信息，看八字五行、生肖与星座的综合匹配度</p>
+    </div>
+    <form id="love-form" class="card birth-form" autocomplete="off">
+      <div class="form-error"></div>
+      <div class="love-form-cols">
+        <fieldset class="love-col">
+          <legend class="form-title">甲方</legend>
+          <div class="form-grid">
+            <label>性别 <select class="a-f-gender"><option value="male">男</option><option value="female">女</option></select></label>
+            <label>历法 <select class="a-f-cal"><option value="solar">公历</option><option value="lunar">农历</option></select></label>
+            <label>出生年 <select class="a-f-year"></select></label>
+            <label>出生月 <select class="a-f-month"></select></label>
+            <label>出生日 <select class="a-f-day"></select></label>
+            <label>出生时辰 <select class="a-f-hour"></select></label>
+          </div>
+        </fieldset>
+        <fieldset class="love-col">
+          <legend class="form-title">乙方</legend>
+          <div class="form-grid">
+            <label>性别 <select class="b-f-gender"><option value="male">男</option><option value="female">女</option></select></label>
+            <label>历法 <select class="b-f-cal"><option value="solar">公历</option><option value="lunar">农历</option></select></label>
+            <label>出生年 <select class="b-f-year"></select></label>
+            <label>出生月 <select class="b-f-month"></select></label>
+            <label>出生日 <select class="b-f-day"></select></label>
+            <label>出生时辰 <select class="b-f-hour"></select></label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-actions love-submit">
+        <button type="submit" class="btn btn-gold">开始配对</button>
+        <span class="form-note">填好甲方、乙方信息后点击一次即可；结果综合八字五行、生肖与星座三方信息。</span>
+      </div>
+    </form>
+    <div id="love-result"></div>
+  </section>
+
+  <!-- ============ 风水 ============ -->
+  <section id="sec-fengshui" class="section">
+    <div class="section-head">
+      <h2>风水开运</h2>
+      <p>以喜用神为核心的个性化风水建议 + 2025 流年九宫飞星图</p>
+    </div>
+    <div id="fengshui-result" class="empty-tip">尚未排盘。请先在「八字排盘」输入出生信息。</div>
+  </section>
+
+  <!-- ============ 情绪 ============ -->
+  <section id="sec-emotion" class="section">
+    <div class="section-head">
+      <h2>情绪调节</h2>
+      <p>此刻的你是什么心情？选择一种情绪，获取专属的舒缓方案</p>
+    </div>
+    <div id="emotion-picker" class="emotion-picker"></div>
+    <div id="emotion-plan" class="empty-tip">点击上方情绪按钮，获取情志相胜、五音疗愈、呼吸引导与穴位安抚方案。</div>
+  </section>
+
+  <!-- ============ 潜力 ============ -->
+  <section id="sec-potential" class="section">
+    <div class="section-head">
+      <h2>潜力开发</h2>
+      <p>天赋解码 × 职业方向 × 成长习惯 × 流年指引，把潜力变成实力</p>
+    </div>
+    <div id="potential-result" class="empty-tip">尚未排盘。请先在「八字排盘」输入出生信息。</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-quote">「知命者不怨天，知己者不怨人。认识自己，是人生一切美好的开始。」</p>
+    <p>免责声明：本站内容基于传统命理文化、中医情志养生与星座文化整理，仅供娱乐与自我探索参考，不构成医疗、投资或重大人生决策建议。命理测算流派众多，结果因人而异，请理性看待。</p>
+    <p class="footer-copy">知命轩 · 让生活更美好 &copy; 2025</p>
+  </div>
+</footer>
+
+<script src="js/lunar.js"></script>
+<script src="js/bazi.js"></script>
+<script src="js/zodiac.js"></script>
+<script src="js/content.js"></script>
+<script src="js/compat.js"></script>
+<script src="js/emotion.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
